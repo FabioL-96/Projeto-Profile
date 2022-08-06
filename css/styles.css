@@ -12,7 +12,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: unset;
-  font-family: 'Montserrat',sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav-container {
@@ -24,9 +24,6 @@
 }
 
 .nav-main {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,56 +37,52 @@
 }
 
 .menu-items {
-    display: flex;
-    list-style-type: none;
-
+  display: flex;
+  list-style-type: none;
 }
 
 .menu-items li {
-    margin: 15px 10px 10px 10px;
+  margin: 15px 10px 10px 10px;
 }
 
 .menu-items a {
-    color: var(--txt-wghite);
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
+  color: var(--txt-wghite);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .profile-container {
-    background-color: var(--bg-green-cyan);
-    padding: 160px 0 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--bg-green-cyan);
+  padding: 160px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-container h1 {
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 35px;
-    color: var(--txt-wghite);
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 35px;
+  color: var(--txt-wghite);
 }
 
 .profile-container p {
-    font-weight: 400;
-    font-size: 1rem;
-    color: var(--txt-wghite);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--txt-wghite);
 }
 
 .profile-image img {
-    width: 150px;
-    height: 150px;
-
+  width: 150px;
+  height: 150px;
 }
 
-#portfolio {
+.container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-
 }
-
 
 .portfolio-title {
   font-weight: 700;
@@ -97,7 +90,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--bg-blue-cyan);
-  margin: 60px 0 8px 0 ;
+  margin: 60px 0 8px 0;
 }
 
 .portfolio-container {
@@ -132,5 +125,39 @@ footer {
 .social-container img {
   width: 32px;
   height: 32px;
-  margin: 10px
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+
+  .portfolio-container img {
+    width: 280px;
+  }
+
+  .nav-container {
+    display: flex;
+  }
+
+  .nav-main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    margin-bottom: 0;
+    font-size: 30px;
+  }
+
+  .menu-items a {
+    font-size: 18px;
+  }
 }
