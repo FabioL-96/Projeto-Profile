@@ -112,6 +112,25 @@
   border-radius: 10px;
   cursor: pointer;
   margin: 20px;
+}
 
+footer {
+  height: 120px;
+  background-color: var(--bg-blue-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.footer-title {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--txt-wghite);
+  margin-top: 30px;
+}
+
+.social-container img {
+  width: 32px;
+  height: 32px;
+  margin: 10px
 }
