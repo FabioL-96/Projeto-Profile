@@ -1,32 +1,58 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 :root {
-    --bg-blue-cyan: #2C3E50;
-    --txt-wghite: #fff;
-    --bg-green-cyan: #1ABC9C;
+  --bg-blue-cyan: #2c3e50;
+  --txt-wghite: #fff;
+  --bg-green-cyan: #1abc9c;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: unset;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: unset;
+  font-family: 'Montserrat',sans-serif;
 }
 
 .nav-container {
-    background-color: var(--bg-blue-cyan);
-    height: 100px;
-    width: 100%;
+  background-color: var(--bg-blue-cyan);
+  height: 100px;
+  width: 100%;
+  padding: 20px;
 }
 
 .nav-main {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-brand {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--txt-wghite);
+  text-transform: uppercase;
+}
+
+.menu-items {
+    display: flex;
+    list-style-type: none;
 
 }
 
-.nav-main a {
+.menu-items li {
+    margin: 15px 10px 10px 10px;
+}
+
+.menu-items a {
     color: var(--txt-wghite);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+
+
 }
