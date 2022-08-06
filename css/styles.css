@@ -53,6 +53,31 @@
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
+}
 
+.profile-container {
+    background-color: var(--bg-green-cyan);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 35px;
+    color: var(--txt-wghite);
+}
+
+.profile-container p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--txt-wghite);
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
 
 }
